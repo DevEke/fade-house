@@ -1,0 +1,53 @@
+.aboutActionWrapper {
+    position: relative;
+    padding-block: 90px;
+    border-block: 1px solid var(--border);
+    background: var(--background-accent);
+}
+
+.backgroundOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("/cta_background.webp");
+    opacity: .15;
+}
+
+.aboutActionContent {
+    position: relative;
+    z-index: 20;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutActionContent h2 {
+    margin-bottom: 6px;
+}
+
+.aboutActionContent p {
+    margin-bottom: 48px;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    .aboutActionContent {
+        width: 40%;
+    }
+}
+
+
+/* Desktops */
+@media (min-width: 1280px) {
+    .aboutActionWrapper {
+        padding-block: 120px;
+    }
+    .aboutActionContent {
+        width: 40%;
+    }
+}

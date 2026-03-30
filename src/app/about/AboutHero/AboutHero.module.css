@@ -1,0 +1,56 @@
+.aboutHeroWrapper {
+    position: relative;
+    padding-block: 90px;
+}
+
+.backgroundOverlay {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    background-image: linear-gradient(to right, var(--background) 50%, rgba(0, 0, 0, .05) 70%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.aboutHeroContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 20;
+}
+
+.aboutHeroContent h1 {
+    margin-bottom: 12px;
+}
+
+.aboutHeroContent p {
+    width: 80%;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    .aboutHeroWrapper {
+        background-image: url("/about_hero_background.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .backgroundOverlay {
+        display: block;
+    }
+
+    .halfContent {
+        width: 55%;
+    }
+}
+
+
+/* Desktops */
+@media (min-width: 1280px) {
+    .aboutHeroWrapper {
+        padding-block: 120px;
+    }
+}

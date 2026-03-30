@@ -1,0 +1,133 @@
+.headerWrapper {
+    position: relative;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.skipLink {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: #C4A45A;
+  color: #1E1E1E;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 9999;
+  transition: top 0.15s;
+}
+
+.skipLink:focus {
+  top: 1rem;
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logoText {
+    font-family: var(--font-heading);
+    color: var(--white);
+    font-size: 24px;
+}
+
+.headerNavContainer {
+    display: none;
+    align-items: center;
+    gap:  48px;
+}
+
+.headerNavLink {
+    font-family: var(--font-body);
+    color: var(--text);
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: color .2s ease;
+}
+
+.headerNavLink:hover {
+    color: var(--brand);
+}
+
+.headerNavLinkActive {
+    color: var(--white);
+}
+
+.headerMenuWrapper {
+    height: 24px;
+    width: 24px;
+    display: grid;
+    place-items: center;
+    background: var(--background-accent);
+    border: none;
+}
+
+.headerMenuIcon {
+    color: var(--white);
+}
+
+.headerMobileMenu {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: var(--background-accent);
+    top: 72px;
+    height: 100%;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 48px;
+    right: -50%;
+    opacity: 0;
+    transition:
+        opacity .2s ease,
+        right .2s ease;
+}
+
+
+.headerMobileMenuOpen {
+    right: 0;
+    opacity: 1;
+}
+
+.headerMobileLink {
+    font-size: 18px;
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+
+/* Tablets */
+@media (min-width: 768px) {
+    .headerWrapper {
+        height: 90px;
+    }
+
+    .headerMenuWrapper {
+        display: none;
+    }
+
+    .headerNavContainer {
+        display: flex;
+    }
+}
+
+
+/* Desktops */
+@media (min-width: 1280px) {
+
+}

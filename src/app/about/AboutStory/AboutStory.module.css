@@ -1,0 +1,48 @@
+.aboutStoryWrapper {
+    position: relative;
+    padding-block: 90px;
+    border-block: 1px solid var(--border);
+    background: var(--background-accent)
+}
+
+.backgroundOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("/cta_background.webp");
+    opacity: .15;
+}
+
+.aboutStoryContent {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.aboutStoryDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutStoryEstablished {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: right;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+
+}
+
+
+/* Desktops */
+@media (min-width: 1280px) {
+
+}

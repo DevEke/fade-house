@@ -1,0 +1,141 @@
+.servicesWrapper {
+    padding-block: 90px;
+}
+
+.servicesContent h2 {
+    margin-bottom: 6px;
+}
+
+.servicesContent p {
+    width: 80%;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 54px;
+}
+
+.servicesGridItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-block: 24px;
+    border-bottom: 1px solid var(--border)
+}
+
+.servicesGridItem p {
+    width: 100%;
+}
+
+.servicesGridItem:nth-of-type(odd) {
+    padding-right: 24px;
+    border-right: 1px solid var(--border);
+}
+
+.servicesGridItem:nth-of-type(even) {
+    padding-left: 24px;
+}
+
+.servicesGridItem:nth-of-type(7),
+.servicesGridItem:nth-of-type(8) {
+    border-bottom: none;
+}
+
+
+/* Tablets */
+@media (min-width: 768px) {
+    .servicesContent h2 {
+        width: 50%;
+    }
+
+    .servicesContent p {
+        width: 50%;
+    }
+
+    .servicesGridItem p {
+        width: 100%;
+    }
+
+}
+
+
+/* Desktops */
+@media (min-width: 1280px) {
+
+    .servicesWrapper {
+        padding-block: 120px;
+    }
+
+    .servicesContent h2 {
+        width: 30%;
+    }
+
+    .servicesContent p {
+        width: 30%;
+    }
+
+    .servicesGridItem p {
+        width: 100%;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .servicesGridItem {
+        border-bottom: none
+    }
+
+    .servicesGridItem:nth-of-type(odd) {
+        padding-right: unset;
+        border-right: unset;
+    }
+
+    .servicesGridItem:nth-of-type(even) {
+        padding-left: unset;
+    }
+
+    .servicesGridItem:nth-of-type(7),
+    .servicesGridItem:nth-of-type(8) {
+        border-bottom: none;
+    }
+
+    .servicesGridItem:nth-of-type(1) {
+        padding-right: 36px;
+        padding-block: 36px;
+        border-right: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .servicesGridItem:nth-of-type(2),
+    .servicesGridItem:nth-of-type(3) {
+        padding-inline: 36px;
+        padding-block: 36px;
+        border-right: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .servicesGridItem:nth-of-type(4) {
+        padding-left: 36px;
+        padding-block: 36px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .servicesGridItem:nth-of-type(5) {
+        padding-right: 36px;
+        padding-block: 36px;
+        border-right: 1px solid var(--border);
+    }
+
+    .servicesGridItem:nth-of-type(6),
+    .servicesGridItem:nth-of-type(7) {
+        padding: 36px;
+        border-right: 1px solid var(--border);
+    }
+
+    .servicesGridItem:nth-of-type(8) {
+        padding-left: 36px;
+        padding-block: 36px;
+    }
+}

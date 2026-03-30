@@ -1,0 +1,66 @@
+.heroWrapper {
+    padding-block: 90px;
+    position: relative;
+}
+
+.backgroundOverlay {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    background-image: linear-gradient(to right, var(--background) 40%, rgba(0, 0, 0, .05) 60%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 20;
+}
+
+.heroContent h1 {
+    margin-bottom: 12px;
+}
+
+.heroContent p {
+    width: 80%;
+    margin-bottom: 48px;
+}
+
+.heroButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    .heroWrapper {
+        background-image: url("/home_hero_background.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .backgroundOverlay {
+        display: block;
+    }
+
+    .halfContent {
+        width: 50%;
+    }
+}
+
+
+/* Desktops */
+@media (min-width: 1280px) {
+    .heroContent h1 {
+        max-width: 400px;
+    }
+    .heroWrapper {
+        padding-block: 120px;
+    }
+}
